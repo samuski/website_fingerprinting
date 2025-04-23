@@ -9,5 +9,7 @@
 
 ## Running code
 
-- Create venv with `python3 -m venv venv` then run `run.sh`
-- Or install directly with `pip install -r requirements.txt` then run `classifier.py`
+- In `app/` directory, create venv with `python3 -m venv venv` then run `run.sh`
+  - `run.sh` includes venv start, requirements install, and running two python files.
+- Or install directly with `pip install -r requirements.txt` then run `export_stats.py` and `classifier.py` sequentially.
+- Or (preferably on PC) install Docker GUI and run `docker-compose up -d --build` then `docker exec -it app /bin/bash`. Now you can run the python files.
